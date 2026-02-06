@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LEVEL</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>LEVEL</h1>
+    <div class="meta">
+      <span id="coins">Coins: 0</span>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab is-active" data-view="onboarding">Start</button>
+    <button class="tab" data-view="today">Today</button>
+    <button class="tab" data-view="plan">Plan</button>
+    <button class="tab" data-view="unlock">Unlocks</button>
+  </nav>
+
+  <main class="container">
+    <section id="view-onboarding" class="view"></section>
+    <section id="view-today" class="view hidden"></section>
+    <section id="view-plan" class="view hidden"></section>
+    <section id="view-unlock" class="view hidden"></section>
+  </main>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>
